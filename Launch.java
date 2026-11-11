@@ -1,20 +1,19 @@
-package akhmetova;
+package dz711;
+
 public class Launch {
     public static void main(String[] args) {
 
-        TrafficLight trafficLight = TrafficLight.GREEN;
+        Goods g = new Goods("Молоко", 98.5);
 
-// через 10 секунд должен быть жёлтый
+        System.out.println(g);
 
-        System.out.println(trafficLight.next(10));
+        Goods g2 = new Goods("Молоко", 102.3);
 
-// через 15 - красный
+        System.out.println(g.equals(g2));
 
-        System.out.println(trafficLight.next(15));
+        Goods g3 = new Goods("Хлеб", 45);
 
-// через 25 секунд должен снова быть зеленый
-
-        System.out.println(trafficLight.next(25));
+        System.out.println(g.equals(g3));
 
     }
 }
